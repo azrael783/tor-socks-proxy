@@ -30,3 +30,5 @@ jobs:
         tags: |
           azrael783/tor-socks-proxy:latest
           azrael783/tor-socks-proxy:1.0.0
+    - name: Image Digest
+      run: echo ${{ steps.docker_build.outposts.digest }}
