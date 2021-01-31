@@ -12,5 +12,19 @@ A small tor proxy image to use with our lovely Raspberry Pi and also "normal" Li
 
 `docker logs -f tor-socks-proxy`
 
+```
+Jan 31 21:15:30.000 [notice] Bootstrapped 67%: Loading relay descriptors
+Jan 31 21:15:30.000 [notice] Bootstrapped 72%: Loading relay descriptors
+Jan 31 21:15:30.000 [notice] Bootstrapped 80%: Connecting to the Tor network
+Jan 31 21:15:31.000 [notice] Bootstrapped 85%: Finishing handshake with first hop
+Jan 31 21:15:31.000 [notice] Bootstrapped 90%: Establishing a Tor circuit
+Jan 31 21:15:32.000 [notice] Tor has successfully opened a circuit. Looks like client functionality is working.
+Jan 31 21:15:32.000 [notice] Bootstrapped 100%: Done
+```
+
+3. Configure your browser to use SOCKS5 proxy with the IP where the container is running. 
+
+
+
 
 
