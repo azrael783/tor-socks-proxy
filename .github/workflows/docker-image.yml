@@ -31,7 +31,7 @@ jobs:
       with:
         context: .
         file: ./Dockerfile
-        platforms: linux/arm/v6,linux/arm/v7
+        platforms: linux/arm/v6,linux/arm/v7,linux/amd64
         push: true
         tags: |
           azrael783/tor-socks-proxy:latest
