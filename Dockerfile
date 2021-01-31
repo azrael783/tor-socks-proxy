@@ -1,5 +1,5 @@
-FROM ubuntu:18.04
-ARG TARGETPLATFORM
+ARG ARCH=
+FROM ${ARCH}ubuntu:18.04
 
 LABEL maintainer="Daniel S. <azrael783@live.de>"
 LABEL name="tor-socks-proxy"
