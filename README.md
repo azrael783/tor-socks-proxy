@@ -7,6 +7,7 @@ A small Tor proxy image without relay/exit feature to use with our lovely Raspbe
 1. Setup the proxy server for the first time:
 
 `$ docker run -d -p 9150:9150 --name=tor-socks-proxy --restart=unless-stopped azrael783/tor-socks-proxy`
+  * The container accepts connections from any IP address. **So don't expose the port 9150 to the internet!**
 
 2. Check if the server runs correctly (give it some time to start up).
 
