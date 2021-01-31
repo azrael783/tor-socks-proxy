@@ -22,8 +22,15 @@ Jan 31 21:15:32.000 [notice] Tor has successfully opened a circuit. Looks like c
 Jan 31 21:15:32.000 [notice] Bootstrapped 100%: Done
 ```
 
-3. Configure your browser to use SOCKS5 proxy with the IP where the container is running. 
+3. Configure your browser to use SOCKS5 proxy with the IP where the container is running. In Firefox for example go to Settings --> Network Settings
 
+picture
+
+4. Check if tor works correctly using [this](https://check.torproject.org/?lang=de) website.
+
+5. If you don't want to use the proxy anymore, stop the container with `docker stop tor-socks-proxy` and don't forget to reset the proxy settings in your browser or use another without the proxy setting.
+
+6. If you want to reuse the proxy, start it with `docker start tor-socks-proxy`
 
 
 
