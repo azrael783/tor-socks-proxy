@@ -7,6 +7,7 @@ A small Tor proxy image without relay/exit feature to use with our lovely Raspbe
 1. Setup the proxy server for the first time:
 
 `$ docker run -d -p 9150:9150 --name=tor-socks-proxy --restart=unless-stopped azrael783/tor-socks-proxy`
+  * The container accepts connections from any IP address. **So don't expose the port 9150 to the internet!**
 
 2. Check if the server runs correctly (give it some time to start up).
 
@@ -26,11 +27,14 @@ Jan 31 21:15:32.000 [notice] Bootstrapped 100%: Done
 
 3. Configure your browser to use SOCKS5 proxy with the IP where the container is running. In Firefox for example go to Settings --> Network Settings
 
-![alt text](https://github.com/azrael783/tor-socks-proxy/browser-settings.png "Firefox proxy settings")
+![alt text](https://github.com/azrael783/tor-socks-proxy/blob/main/browser-settings.png "Firefox proxy settings")
+
+
 
 4. Check if tor works correctly using [this](https://check.torproject.org/?lang=de) website.
 
-![alt text](https://github.com/azrael783/tor-socks-proxy/check-tor-usage.png "Check if Tor is working")
+![alt text](https://github.com/azrael783/tor-socks-proxy/blob/main/check-tor-usage.png "Check if Tor is working")
+
 
 
 5. If you don't want to use the proxy anymore, stop the container with `docker stop tor-socks-proxy` and don't forget to reset the proxy settings in your browser or use another without the proxy setting.
