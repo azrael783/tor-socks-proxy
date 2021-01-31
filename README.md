@@ -28,9 +28,12 @@ Jan 31 21:15:32.000 [notice] Bootstrapped 100%: Done
 
 ![alt text](https://github.com/azrael783/tor-socks-proxy/blob/readme/browser-settings.png "Firefox proxy settings")
 
+
+
 4. Check if tor works correctly using [this](https://check.torproject.org/?lang=de) website.
 
 ![alt text](https://github.com/azrael783/tor-socks-proxy/blob/readme/check-tor-usage.png "Check if Tor is working")
+
 
 
 5. If you don't want to use the proxy anymore, stop the container with `docker stop tor-socks-proxy` and don't forget to reset the proxy settings in your browser or use another without the proxy setting.
