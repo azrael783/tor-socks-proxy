@@ -1,6 +1,6 @@
 # tor-socks-proxy
 
-A small tor proxy image to use with our lovely Raspberry Pi and also "normal" Linux platforms (I just had fun to build up the CI/CD with Github :-) ). Inspired by [this blog](https://www.blog.berrybase.de/blog/2021/01/16/tor-proxy-server-so-surfst-du-anonym-mit-dem-pi/) post and the images from [peterdavehello](https://hub.docker.com/r/peterdavehello/tor-socks-proxy) and [x86txt](https://hub.docker.com/r/x86txt/tor-socks-proxy) I decided to create my own image for the "ARM" platform to run on a Rasperry Pi for example.
+A small tor proxy image without relay/exit feature to use with our lovely Raspberry Pi, or other ARM featured platforms and also "normal" Linux platforms (I just had fun to build up the CI/CD with Github :-) ). Inspired by [this blog](https://www.blog.berrybase.de/blog/2021/01/16/tor-proxy-server-so-surfst-du-anonym-mit-dem-pi/) post and the images from [peterdavehello](https://hub.docker.com/r/peterdavehello/tor-socks-proxy) and [x86txt](https://hub.docker.com/r/x86txt/tor-socks-proxy) I decided to create my own image for the "ARM" platform to run on a Rasperry Pi for example.
 
 # Usage
 
@@ -10,9 +10,13 @@ A small tor proxy image to use with our lovely Raspberry Pi and also "normal" Li
 
 2. Check if the server runs correctly (give it some time to start up).
 
-`docker logs -f tor-socks-proxy`
+
 
 ```
+$ docker logs -f tor-socks-proxy
+.
+.
+.
 Jan 31 21:15:30.000 [notice] Bootstrapped 67%: Loading relay descriptors
 Jan 31 21:15:30.000 [notice] Bootstrapped 72%: Loading relay descriptors
 Jan 31 21:15:30.000 [notice] Bootstrapped 80%: Connecting to the Tor network
@@ -24,9 +28,11 @@ Jan 31 21:15:32.000 [notice] Bootstrapped 100%: Done
 
 3. Configure your browser to use SOCKS5 proxy with the IP where the container is running. In Firefox for example go to Settings --> Network Settings
 
-picture
+[logo]: https://github.com/azrael783/tor-socks-proxy/browser-settings.png "Firefox proxy settings"
 
 4. Check if tor works correctly using [this](https://check.torproject.org/?lang=de) website.
+
+
 
 5. If you don't want to use the proxy anymore, stop the container with `docker stop tor-socks-proxy` and don't forget to reset the proxy settings in your browser or use another without the proxy setting.
 
