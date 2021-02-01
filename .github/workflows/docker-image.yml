@@ -3,6 +3,8 @@ name: CI to Docker Hub
 on:
   push:
     branches: [ main ]
+    paths:
+      - README.md
 
 
 jobs:
