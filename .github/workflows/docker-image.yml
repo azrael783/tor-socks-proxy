@@ -36,3 +36,9 @@ jobs:
         tags: |
           azrael783/tor-socks-proxy:latest
           azrael783/tor-socks-proxy:1.0.0
+    - name: Docker Hub Description
+      uses: peter-evans/dockerhub-description@v2
+      with:
+        username: ${{ secrets.DOCKERHUB_USERNAME }}
+        password: ${{ secrets.DOCKERHUB_PASSWORD }}
+        repository: azrael783/tor-socks-proxy
