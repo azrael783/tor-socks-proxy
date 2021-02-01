@@ -27,13 +27,13 @@ Jan 31 21:15:32.000 [notice] Bootstrapped 100%: Done
 
 3. Configure your browser to use SOCKS5 proxy with the IP where the container is running. In Firefox for example go to Settings --> Network Settings
 
-![picture1](https://raw.githubusercontent.com/azrael783/tor-socks-proxy/readme/browser-settings.png "Firefox proxy settings")
+![picture1](https://raw.githubusercontent.com/azrael783/tor-socks-proxy/main/browser-settings.png "Firefox proxy settings")
 
 
 
 4. Check if tor works correctly using [this](https://check.torproject.org/?lang=de) website.
 
-![picture2](https://raw.githubusercontent.com/azrael783/tor-socks-proxy/readme/check-tor-usage.png "Check if Tor is working")
+![picture2](https://raw.githubusercontent.com/azrael783/tor-socks-proxy/main/check-tor-usage.png "Check if Tor is working")
 
 
 
