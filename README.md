@@ -1,6 +1,6 @@
 # tor-socks-proxy
 
-A small Tor proxy image without relay/exit feature to use with our lovely Raspberry Pi, or any other ARM featured platform and also "normal" Linux platforms (I just had fun to build up the CI/CD with Github :-) ). Inspired by [this blog](https://www.blog.berrybase.de/blog/2021/01/16/tor-proxy-server-so-surfst-du-anonym-mit-dem-pi/) post and the images from [peterdavehello](https://hub.docker.com/r/peterdavehello/tor-socks-proxy) and [x86txt](https://hub.docker.com/r/x86txt/tor-socks-proxy) I decided to create my own image for the "ARM" platform.
+A small [Tor](https://www.torproject.org/) proxy image without relay/exit feature to use with the lovely Raspberry Pi, or any other ARM featured platform and also "normal" Linux platforms (I just had fun to build up the CI/CD with Github :-) ). Inspired by [this blog](https://www.blog.berrybase.de/blog/2021/01/16/tor-proxy-server-so-surfst-du-anonym-mit-dem-pi/) post and the images from [peterdavehello](https://hub.docker.com/r/peterdavehello/tor-socks-proxy) and [x86txt](https://hub.docker.com/r/x86txt/tor-socks-proxy) I decided to create my own image for the "ARM" platform.
 
 # Usage
 
@@ -27,13 +27,13 @@ Jan 31 21:15:32.000 [notice] Bootstrapped 100%: Done
 
 3. Configure your browser to use SOCKS5 proxy with the IP where the container is running. In Firefox for example go to Settings --> Network Settings
 
-![alt text](https://github.com/azrael783/tor-socks-proxy/blob/main/browser-settings.png "Firefox proxy settings")
+![picture1](https://raw.githubusercontent.com/azrael783/tor-socks-proxy/readme/browser-settings.png "Firefox proxy settings")
 
 
 
 4. Check if tor works correctly using [this](https://check.torproject.org/?lang=de) website.
 
-![alt text](https://github.com/azrael783/tor-socks-proxy/blob/main/check-tor-usage.png "Check if Tor is working")
+![picture2](https://raw.githubusercontent.com/azrael783/tor-socks-proxy/readme/check-tor-usage.png "Check if Tor is working")
 
 
 
