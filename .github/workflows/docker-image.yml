@@ -3,8 +3,7 @@ name: CI to Docker Hub
 on:
   push:
     branches: [ main ]
-    paths:
-      - README.md
+
 
 
 jobs:
@@ -38,9 +37,3 @@ jobs:
         tags: |
           azrael783/tor-socks-proxy:latest
           azrael783/tor-socks-proxy:1.0.1
-    - name: Docker Hub Description
-      uses: peter-evans/dockerhub-description@v2
-      with:
-        username: ${{ secrets.DOCKER_HUB_USERNAME }}
-        password: ${{ secrets.DOCKER_HUB_ACCESS_TOKEN }}
-        repository: azrael783/tor-socks-proxy
