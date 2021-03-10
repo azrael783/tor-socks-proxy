@@ -33,7 +33,7 @@ Jan 31 21:15:32.000 [notice] Bootstrapped 100%: Done
 
 4. Check if tor works correctly using [this](https://check.torproject.org/?lang=de) website.
 
-![picture2](https://raw.githubusercontent.com/azrael783/tor-socks-proxy/main/check-tor-usage.png "Check if Tor is working")
+
 
 
 
